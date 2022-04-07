@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.1.32328.378
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DialogoModal", "DialogoModal\DialogoModal.csproj", "{0FAB09D1-CE80-4063-A185-D54298FB19FD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MeusComponentes", "MeusComponentes\MeusComponentes.csproj", "{E7CCE240-83D3-4B20-818A-865F611ADC0F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0FAB09D1-CE80-4063-A185-D54298FB19FD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0FAB09D1-CE80-4063-A185-D54298FB19FD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0FAB09D1-CE80-4063-A185-D54298FB19FD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0FAB09D1-CE80-4063-A185-D54298FB19FD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7CCE240-83D3-4B20-818A-865F611ADC0F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7CCE240-83D3-4B20-818A-865F611ADC0F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7CCE240-83D3-4B20-818A-865F611ADC0F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7CCE240-83D3-4B20-818A-865F611ADC0F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {EC5D90B3-CCBB-4C9A-81F9-F4FB7F702FB8}
+	EndGlobalSection
+EndGlobal

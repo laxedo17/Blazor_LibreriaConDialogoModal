@@ -1,0 +1,30 @@
+﻿@if (Mostrar)
+{
+    <div class="dialog-container">
+        <div class="dialog">
+            <div class="dialog-title">@Titulo</div>
+            <div class="dialog-body">@Corpo</div>
+            <div class="dialog-buttons">
+                <button class="btn btn-dark mr-2" @onclick="OnOk">
+                    OK
+                </button>
+                <button class="btn btn-danger" @onclick="OnCancel">
+                    Cancelar
+                </button>
+            </div>
+        </div>
+
+    </div>
+}
+
+@code {
+    //O decorator [Parameter] non necesita estar na mesma linha que a propiedade á que se aplica
+    [Parameter] public bool Mostrar { get; set; }
+    [Parameter] public EventCallback<MouseEventArgs> OnOk { get; set; }
+    [Parameter] public EventCallback<MouseEventArgs> OnCancel { get; set; }
+
+        [Parameter]
+        public RenderFragment Titulo{get;set;}
+        [Parameter]
+        public RenderFragment Corpo{get;set;}
+}

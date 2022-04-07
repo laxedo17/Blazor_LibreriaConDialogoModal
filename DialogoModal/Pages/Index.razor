@@ -1,0 +1,45 @@
+﻿@page "/"
+@using MeusComponentes;
+
+<Component1 />
+
+<BlazorWebAssemblyDialogo Mostrar="mostrarDialogo" OnCancel="DialogoCancelHandler" OnOk="DialogoOkHandler">
+    <Titulo>Lista rapida[@(Elementos.Count + 1)]</Titulo>
+    <Corpo>
+        Agrega un novo elemento: <input @bind="NovoElemento">
+    </Corpo>
+</BlazorWebAssemblyDialogo>
+<ol>
+    @foreach (var elemento in Elementos)
+    {
+        <li>@elemento</li>
+    }
+</ol>
+<button @onclick="OpenDialogo">Mostrar Dialogo</button>
+
+@code {
+    private string NovoElemento;
+    private List<string> Elementos = new(); //ou tamen se pode escribirprivate List<string> Elementos = new List<string>();
+    private bool mostrarDialogo = false;
+
+    private void OpenDialogo()
+    {
+        mostrarDialogo = true;
+    }
+
+    private void DialogoCancelHandler(MouseEventArgs e)
+    {
+        NovoElemento = "";
+        mostrarDialogo = false;
+    }
+
+    private void DialogoOkHandler(MouseEventArgs e)
+    {
+        if (!string.IsNullOrEmpty(NovoElemento))
+        {
+            Elementos.Add(NovoElemento);
+            NovoElemento = "";
+        }
+        mostrarDialogo = true;
+    }
+}
